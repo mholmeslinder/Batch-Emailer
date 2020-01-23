@@ -1,5 +1,6 @@
 # Mobius Trio Kickstarter 2019 Bandcamp code sender
 import requests
+# keeping API key and domain secret and safe in their own lil modules
 from keys import key, domain
 
 recipients = []
