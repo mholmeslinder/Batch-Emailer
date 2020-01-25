@@ -6,22 +6,22 @@ from keys import key, domain
 
 # open backers csv and use for loop to turn emails into recipients
 df1 = pd.read_csv('backers.csv', usecols=[3])
-recipients = list(df1)
+recipients = list(df1.values.flatten())
 
 # open bandcamp codes csv and and use for loop to turn codes into codes
 df2 = pd.read_csv('codes.csv', usecols=[0])
-codes =  list(df2)
+codes = list(df2.values.flatten())
 
 # zip those into a dict
 pairs = dict(zip(recipients, codes))
 
-''' TODO use for loop to iterate through dict, 
+''' use for loop to iterate through dict, 
 making request for each recipient/code pair and inserting them into 
 {recipient} and {code} '''
 
 request_url = f'https://api.mailgun.net/v2/{domain}/messages'
 
-for recipient, code in pairs:
+for recipient, code in pairs.items():
     request = requests.post(request_url, auth=('api', key), data={
         'from': 'KickstarterFulfillment@mobiustrio.org',
         'to': {recipient},
