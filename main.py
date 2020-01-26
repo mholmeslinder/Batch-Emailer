@@ -4,17 +4,12 @@ import csv
 # # TODO Take API key and csv file as environment variables
 
 # open csv and put recipients and codes into lists
-recipients = []
-codes = []
-
-with open('mailgun.csv') as csvfile:
+pairs = {}
+with open('./ignore/mailgun.csv') as csvfile:
     read_csv = csv.reader(csvfile, delimiter=',')
     for row in read_csv:
-        recipients.append(row[1])
-        codes.append(row[0])
+        pairs[row[1]] = row[0]
 
-# zip those into a dict
-pairs = dict(zip(recipients, codes))
 print(pairs)
 ''' use for loop to iterate through dict, 
 making request for each recipient/code pair and inserting them into 
