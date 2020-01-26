@@ -11,3 +11,6 @@ __pycache__/
 .idea/
 .vscode/
 
+# ignore everything we put in this folder
+ignore/
+
