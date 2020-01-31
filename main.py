@@ -25,7 +25,7 @@ for recipient, code in pairs.items():
         body = f"""
 Hello, wonderful Kickstarter backer! You wanted a digital download of our new album Bon Voyage,
 so here is a code to download it from Bandcamp: {code}\n\n
-The way it works is: you navigate to http://mobiustrio.bandcamp.com/yum , and then you enter the code!
+The way it works is: you navigate to http://mobiustrio.bandcamp.com/yum, and then you enter the code!
 It's as simple as that. We hope you love it.
 
 Love,
@@ -33,7 +33,7 @@ The Guys at Mobius Trio
 """
         # TODO Make this dict, esp body text, more elegant/customizable
         request = requests.post(request_url, auth=('api', key), data={
-            'from': 'KickstarterFulfillment@mobiustrio.org',
+            'from': 'mail@mobiustrio.org',
             'to': recipient,
             'subject': 'A digital download of Bon Voyage, for you!' ,
             'text': body
