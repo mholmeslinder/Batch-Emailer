@@ -38,3 +38,4 @@ class Sender(object):
 
         # close log
         log.close()
+        

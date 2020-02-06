@@ -26,8 +26,6 @@ for recipient, code in pairs.items():
         body=f'Here is your damn {code}',)
     )
 
-# can do this, or expose a sender.Load(messages) and sender.SendLoaded().
-#  Or do a sender.SendBulk(messages).
 for message in messages:
     sender.send(message)
 
