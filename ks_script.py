@@ -1,12 +1,10 @@
-# ks_script.py
+# ks_script.py - 
 from sys import argv
 import csv
 import mailer
 
-# since these are a little more private we pull them in from argv, 
-# though if message body was sensitive enough that we didn't want to check in on github \
-# then you might not want to include that in the file as well
-# import codes_file
+# take sensitive info as arguments
+# order = api_key, domain, csv with recipients and codes, and filepath to logfile
 _, api_key, domain, codes_file, log_file_path = argv
 sender = mailer.Sender(api_key=api_key, domain=domain, log_file_path=log_file_path)
 
@@ -20,9 +18,12 @@ with open(codes_file) as csvfile:
 messages = []
 for recipient, code in pairs.items():
     messages.append(mailer.Message(
+        # Just plug in your subject 
         subject='cool subject',
+        # desired from-address (where the email is coming from)
         from_address='no-reply@thing.com',
         to=recipient,
+        # Email body - use {code} where you want to put the Bandcamp code
         body=f'Here is your damn {code}',)
     )
 

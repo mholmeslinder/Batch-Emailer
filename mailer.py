@@ -19,8 +19,8 @@ class Sender(object):
         self.log_file_path = log_file_path
         
     def send(self, Message):
-        # open file for recording recipients, codes, status, and msg body.
-        # File is created if it doesn't exist. Append only.
+        # open file for recording recipients, codes, status, and msg body
+        # File is created if it doesn't exist. Append only
         log = open(self.log_file_path, "a+")
         try:
             requests.post(
@@ -38,4 +38,3 @@ class Sender(object):
 
         # close log
         log.close()
-        
