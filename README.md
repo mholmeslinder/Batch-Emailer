@@ -46,7 +46,7 @@ This is really simple: each email in your list should be in column one in the .c
 
 That way, each email is matched up with the associated 'code'.
 
-The way Kickstarter and Bandcamp spit out emails and codes, this was very simple to make - all I did was copy and paste the `Emails` column from our Kickstarter Backer Report into column one, and the list of codes from Bandcamp into column two.
+The way Kickstarter and Bandcamp spit out emails and codes, this was very simple to make - all I did was copy and paste  the list of codes from Bandcamp into column two, and the  `Emails` column from our Kickstarter Backer Report into column one, like so: 
 
 ![](./docs/test_csv_example.png)
 
