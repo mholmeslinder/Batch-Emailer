@@ -48,7 +48,7 @@ That way, each email is matched up with the associated 'code'.
 
 The way Kickstarter and Bandcamp spit out emails and codes, this was very simple to make - all I did was copy and paste the `Emails` column from our Kickstarter Backer Report into column one, and the list of codes from Bandcamp into column two.
 
-![](./ignore/test_csv_example.png)
+![](https://drive.google.com/open?id=1hgIfG7-iqhT6soX54Gm93Gf5WCZGGY_n)
 
 ## Usage
 
