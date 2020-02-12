@@ -1,6 +1,6 @@
 # KS Code Mailer
 
-Simple Python module and script for mailing unique Bandcamp download codes (or another unique, personalized piece of data) to a each address in a list of emails using the Mailgun API [Mailgun](https://app.mailgun.com/).
+Simple Python module and script for mailing unique Bandcamp download codes (or another unique, personalized piece of data) to a each address in a list of emails using the [Mailgun](https://app.mailgun.com/) API.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
@@ -18,7 +18,7 @@ You'll need:
 * [Mailgun API](https://documentation.mailgun.com/en/latest/api_reference.html)
 
 ##### Requests
-You can install Requests via the link above, or you can do it through pip [pip](https://pip.pypa.io/en/stable/) like:
+You can install Requests via the link above, or you can do it through [pip](https://pip.pypa.io/en/stable/) like:
 
 ```
 pip install requests
@@ -33,20 +33,22 @@ Mailgun requires you to verify your domain, but he Mailgun site has a [Quickstar
 
 Since this is just a single module and script, there's not much to installation.
 
-* Simply clone this repo
+* Simply clone this repo from the command line
 
 ```
  git clone https://github.com/mholmeslinder/KS2019_Mailgun
 ```
 
 
-* Next, we'll create a .csv file that will contain our matched lists of email addresses and whatever unique info (later called {code} in our Python script) needs to be sent to each of those emails.
+* Next, we'll create a .csv file that will contain our matched lists of email addresses and whatever unique info - later called {code} in our Python script - needs to be sent to each of those emails.
 
-This is really simple - each email in your list should be in column one in the .csv, and your list of 'codes' (again, this can be anything, but we made this to send individual Bandcamp codes) should be column two.
+This is really simple: each email in your list should be in column one in the .csv, and your list of 'codes' (again, this can be anything, but we made this to send individual Bandcamp codes) should be column two.
 
 That way, each email is matched up with the associated 'code'.
 
 The way Kickstarter and Bandcamp spit out emails and codes, this was very simple to make - all I did was copy and paste the `Emails` column from our Kickstarter Backer Report into column one, and the list of codes from Bandcamp into column two.
+
+![](./ignore/test_csv_example.png)
 
 ## Usage
 
