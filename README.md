@@ -90,10 +90,9 @@ Please contact me directly for details on our code of conduct, and the process f
 
 ## Authors
 
-* **Matt Linder** - *Initial work* - [mholmeslinder](https://github.com/mholmeslinder)
+* **Matt Linder** - [mholmeslinder](https://github.com/mholmeslinder)
 
-* **Mason Fish** - *Advice/Fixing Things/General Guruhood* - [mason-fish](https://github.com/mason-fish)
 
 ## Acknowledgments
 * A big thanks to the backers for [Mobius Trio](http://mobiustrio.org)'s [Bon Voyage Kickstarter](https://www.kickstarter.com/projects/mobiustrio/bon-voyage-a-new-album-from-mobius-trio
-* Another big thanks to Mason, who really helped me put this together. It would be way more of a mess, if it weren't for him.
+* Big thanks to **Mason Fish [mason-fish](https://github.com/mason-fish)** for being totally awesome and helping me A TON with every part of making things.
