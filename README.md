@@ -1,6 +1,6 @@
 # KS Code Mailer
 
-Simple Python module and script for mailing unique Bandcamp download codes (or another unique, personalized piece of data) to a each address in a list of emails using the [Mailgun](https://app.mailgun.com/) API.
+Simple Python module and script for mailing unique Bandcamp download codes (or another unique, personalized piece of data) to each address in a list of emails using the [Mailgun](https://app.mailgun.com/) API.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
@@ -65,11 +65,11 @@ Here's an excerpt of ks_script.py (`Lines 21-27`)
         from_address='no-reply@thing.com',
         to=recipient,
         # Email body - use {code} where you want to put the Bandcamp code
-        body=f'Here is your {code}',)
+        body=f'Here is your {code}'
 ```
 Simply replace the strings following `subject`, `from_address`, and `body` with whatever you'd like yours to say, and make sure to use `{code}` in the place where you'd like the email to contain the 'codes' we put in our .csv file earlier.
 
-*  Make sure you're in the correct directory, and then run the `ks_script.py` script `using four arguments`: api key, domain, the filepath to your emails/codes .csv, and a filepath for a log file (for Mailgun's logs about whether emails were sent successfully).
+*  Make sure you're in the correct directory, and then run the `ks_script.py` script `using four arguments`: api key, domain, the filepath to your emails/codes .csv, and a filepath for a log file (for  logs about whether emails were sent successfully).
 
 ```
 python ks_script.py *your api key* *your mailgun domain* *your emails+codes.csv filepath* *your log_file filepath* 
